@@ -1,0 +1,6 @@
+function [pop,SortOrder]= SortPopulation(pop)
+    % Ä¿±êÖµÉýÐòÅÅÐò
+    Costs=[pop.Cost];
+    [~,SortOrder]=sort(Costs);
+    pop=pop(SortOrder);
+end
